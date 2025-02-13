@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('baduy.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px);
+            /* Apply blur effect */
+            z-index: -1;
+            /* Ensure it's behind the content */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            /* Keep content above the background */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <h1 class="text-center m-5">KAMPUNG ADAT BADUY
+            <hr class="text-light">
+        </h1>
+        <div class="d-flex justify-content-center align-items-center" style="height: 60vh;">
+            <img src="baduy.jpg" class="w-25" alt="">
+        </div>
+        <div class="justify-content-center text-center">
+            <h4>Klik jeng soal <br> <i class="fa-solid fa-arrow-down"></i></h4>
+            <button type="button" class="btn btn-outline-dark" id="button">KLIK</button>
+            <!-- Tempat untuk menampilkan jawaban -->
+            <p id="jawaban" class="fs-5 text-light bg-dark"
+                style="display:none; margin-top: 20px; text-align: left; padding-left: 20px;">
+                <span class="fs-1">1. Sejarah singkat tentang kampung adat Baduy?</span>
+                <br>Sejarah singkat tentang Kampung Adat Baduy bisa dimulai dari masa kerajaan Sunda.
+                <br> Suku Baduy merupakan bagian dari orang Sunda yang memilih untuk tetap hidup
+                <br> dengan cara tradisional, menjaga kearifan lokal, dan menghindari pengaruh
+                <br> modernisasi. Pada masa lalu, mereka mempercayai ajaran yang berhubungan dengan nilai-nilai
+                <br> spiritual dan adat istiadat yang kuat.
+                <br> Baduy Dalam adalah kelompok yang sangat konservatif, hidup dengan aturan adat yang ketat, dan
+                sangat menjaga jarak dengan dunia luar. Mereka mengenakan pakaian serba putih dan hitam, serta tidak
+                menggunakan alat teknologi modern seperti telepon atau kendaraan bermotor.
+                <br> Baduy Luar lebih terbuka dan berinteraksi dengan masyarakat di luar kampung adat. Mereka masih
+                memegang teguh adat, tetapi sedikit lebih fleksibel dalam hal teknologi dan interaksi sosial.
+                <br>
+                <br>
+                <br>
+
+                <span class="fs-1">2.Lokasi Kampung Adatna</span>
+                <br>
+                Kampung Adat Baduy terletak di Kabupaten Lebak, Provinsi Banten, Indonesia. Lokasi ini berada di kawasan
+                perbukitan yang cukup terpencil, tepatnya di wilayah Kecamatan Leuwidamar. Kampung Adat Baduy terbagi
+                menjadi dua bagian, yaitu Baduy Dalam dan Baduy Luar.
+
+                <br>
+                <br>
+                <br>
+
+                <span class="fs-1">3.Struktur organisasi kampung adat baduy</span>
+                <br>Struktur organisasi Kampung Adat Baduy sangat sederhana dan berdasarkan sistem adat yang sudah
+                turun-temurun. Masyarakat Baduy memiliki kepemimpinan yang bersifat kolektif dan berbasis pada tradisi
+                yang sangat dihormati oleh seluruh anggota masyarakat. <br> Berikut adalah struktur organisasi yang ada
+                di Kampung Adat Baduy:<br><br>
+
+                <span class="fs-4">1. Pemangku Adat (Pimpinan Adat)</span><br>
+                Pemangku adat atau Pangéran adalah pemimpin tertinggi di Kampung Adat Baduy. Pangéran memimpin
+                berdasarkan keputusan musyawarah adat dan memiliki kewajiban untuk menjaga kelestarian adat dan tradisi.
+                Pemangku adat bertanggung jawab untuk mengatur segala aspek kehidupan adat, mulai dari upacara, aturan,
+                hingga interaksi dengan masyarakat luar.<br><br>
+
+                <span class="fs-4">2. Jaro (Kepala Kampung)</span><br>
+                Jaro adalah kepala kampung dalam struktur pemerintahan adat Baduy. Jaro bertugas untuk memimpin
+                masyarakat Baduy dalam hal administrasi adat, seperti mengatur kehidupan sehari-hari dan menjaga
+                keharmonisan antar warga. Jaro juga memiliki peran dalam mengambil keputusan bersama dengan pemangku
+                adat.<br><br>
+
+                <span class="fs-4">3. Rukun Adat (Masyarakat Baduy)</span><br>
+                Setiap warga Baduy memiliki peran dalam menjaga kelestarian adat. Mereka terbagi dalam beberapa
+                kelompok, yaitu Baduy Dalam (yang lebih konservatif) dan Baduy Luar (yang sedikit lebih terbuka). Meski
+                ada perbedaan dalam kelompok ini, semuanya berkomitmen untuk menjaga nilai-nilai adat dan tradisi.
+                Baduy Dalam memiliki peraturan yang lebih ketat dan menjaga jarak dengan dunia luar. Mereka tidak
+                menggunakan teknologi modern dan mengikuti adat secara ketat.
+                Baduy Luar lebih terbuka dengan dunia luar, namun mereka tetap mematuhi aturan adat.<br><br>
+
+                <span class="fs-4">4. Peran Masyarakat</span><br>
+                Setiap anggota masyarakat Baduy memiliki tanggung jawab untuk melaksanakan kegiatan adat dan menjaga
+                kelestarian budaya. Setiap individu diharapkan untuk menjaga kehidupan yang harmonis dan sederhana,
+                serta meneruskan tradisi yang ada.
+                Masyarakat Baduy juga menjaga hubungan dengan alam dan lingkungan sekitarnya, yang dianggap sebagai
+                bagian dari sistem spiritual dan adat mereka.<br><br>
+
+                <span class="fs-4">5. Sistem Musyawarah</span><br>
+                Sebagian besar keputusan dalam masyarakat Baduy diambil melalui musyawarah bersama. Semua anggota
+                masyarakat memiliki suara dalam musyawarah, terutama dalam masalah-masalah yang berkaitan dengan
+                kehidupan adat dan kesejahteraan masyarakat. <br><br>
+
+                <span class="fs-4">6. Religi dan Adat</span><br>
+                Kepercayaan terhadap ajaran spiritual sangat kuat di kalangan masyarakat Baduy. Pemimpin adat sering
+                kali bertindak sebagai penjaga nilai-nilai spiritual dan penghubung antara masyarakat dengan alam, serta
+                leluhur mereka. <br><br>
+
+                <span class="fs-1">4.Sesebutan ngaran ketua adatna/Menteri?</span><br>
+                Pangéran: <br> Sebagai pemimpin tertinggi dalam struktur adat, Pangéran memiliki peran yang sangat
+                penting dalam memimpin masyarakat Baduy, menjaga kelestarian adat dan budaya, serta memastikan semua
+                aturan adat dijalankan dengan baik.
+                <br>
+                Jaro: <br> Kepala kampung atau pemimpin lokal yang memimpin kehidupan sehari-hari masyarakat dalam hal
+                administrasi adat. Jaro juga bertugas menjaga hubungan antara masyarakat Baduy dengan dunia luar,
+                terutama Baduy Luar yang lebih terbuka dibandingkan dengan Baduy Dalam
+
+                <br><br>
+
+                <span class="fs-1">5.Ngaran imah atawa bangunan</span><br>
+                Bentuk Atap: <br> Atap rumah Baduy berbentuk tajam mirip piramida, dengan tujuan untuk menahan angin dan
+                hujan. <br>
+                Material: <br> Rumah dibangun dengan bahan-bahan alami yang tersedia di sekitar lingkungan, seperti
+                kayu, bambu, dan daun ilalang. <br>
+                Tanpa Paku: <br> Rumah adat Baduy dibangun tanpa menggunakan paku, hanya mengandalkan sambungan kayu dan
+                bambu. <br>
+                Lantai dan Dinding: <br> Lantai rumah terbuat dari tanah yang dipadatkan, sementara dindingnya biasanya
+                terbuat dari anyaman bambu atau kayu. <br>
+
+                <br><br>
+
+                <span class="fs-1">6.Jumlah bangunan</span><br>
+                Baduy Dalam: <br>
+                Di Baduy Dalam, terdapat sekitar 10 hingga 15 kampung adat dengan jumlah bangunan rumah tradisional yang
+                terbatas. Setiap rumah atau "imah" dihuni oleh satu keluarga.
+                Kampung-kampung ini sangat terpencil dan jumlah penduduknya relatif sedikit karena mereka memilih untuk
+                menjaga jarak dengan dunia luar dan menghindari pengaruh modernisasi. <br>
+                Baduy Luar: <br>
+                Baduy Luar lebih terbuka terhadap pengaruh luar dan interaksi dengan masyarakat luar. Di kampung ini,
+                bangunannya lebih banyak dibandingkan dengan Baduy Dalam. Di Baduy Luar, ada sekitar 10 hingga 20
+                kampung adat yang lebih mudah diakses oleh pengunjung.
+                Masyarakat Baduy Luar menggunakan bangunan yang lebih modern dalam beberapa hal, meski tetap
+                mempertahankan tradisi adat mereka. <br>
+
+                <br><br>
+
+                <span class="fs-1">7.aturan</span><br>
+            
+                Menjaga Kehidupan Tradisional
+                <br>
+                Larangan Berinteraksi dengan Dunia Luar (Baduy Dalam)
+                <br>
+                Larangan Menggunakan Pakaian Modern
+                <br>
+                Pelaksanaan Upacara Adat
+                <br>
+                Dilarang Menggunakan Alat Teknologi Modern (Baduy Dalam)
+                <br>
+                Aturan Berbicara dan Berinteraksi
+                <br>
+                Larangan Membawa Barang Modern
+                <br>
+                Pembangunan dan Pemeliharaan Alam
+                <br>
+                Menjaga Keharmonisan dalam Masyarakat
+
+                <br><br>
+
+                <span class="fs-1">8.Ngaran upacara adat</span><br>
+                1.upacara Seba <br>
+                2.upacara panganten <br>
+                3.upacara ngalungsur <br>
+                4.upacara Bersih Desa <br>
+                5.upacara nguwatan <br>
+                6.upacara sadranan <br>
+                7.upacara penanam pohon <br>
+                8.upacara puasa Adat <br>
+                9.upacara Malam tahun baru <br>
+
+                <br><br>
+
+                <span class="fs-1">9.Agama kampung adat baduy</span><br>
+                kepercayaan kepada roh leluhur <br>
+                penyembahan alam dan dewa <br>
+                ritual dan upacara adat <br>
+                larangan dan pantangan <br>
+                Kepercayaan kepada tuhan YME <br>
+                Tidak terpengaruh oleh agama lain <br>
+
+                <span class="fs-1">10.Fakta unik kampung adat baduy</span><br>
+                Imah heunteu dina beton <br>
+                Pakean adat sederhana <br>
+                Te make alat modern <br>
+                Jauh jeung dunia luar <br>
+                pemerintahan nu kuat <br>
+
+                <br><br><br><br><br>
+
+                <div id="penutup" class="center-text fs-2 ">
+                    <span class="fs-3">Sekian <br> TerimaKasih</span>
+                </div>
+            </p>
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('button').addEventListener('click', function () {
+            document.getElementById('jawaban').style.display = 'block';
+        });
+    </script>
+
+
+</body>
+
+</html>
